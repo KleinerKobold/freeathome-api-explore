@@ -26,7 +26,7 @@ curl -X GET "http://$FREEATHOME_USR:$FREEATHOME_PWD@$FREEATHOME_HOST/fhapi/v1/ap
 
 echo ""
 
-echo "==========TURN ON=========="
+echo "==========TURN STATE=========="
 echo TARGET STATE: $TARGET_STATE
 curl -X PUT "http://$FREEATHOME_USR:$FREEATHOME_PWD@$FREEATHOME_HOST/fhapi/v1/api/rest/datapoint/$FREEATHOME_AP/$DEVICE.$CHANNEL_SW.$DATAPOINT_SW" \
     -H  "accept: application/json" -H  "Content-Type: text/plain" \
